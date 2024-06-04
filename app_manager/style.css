@@ -1,0 +1,247 @@
+/* index page classes */
+
+.index-container{
+    margin:0;
+    color: #005ca9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-header{
+    padding: 2rem;
+    background-color: #005ca9;
+    color: white;
+}
+
+.index-sidebar{
+    margin:5px;
+    padding: 2rem;
+    min-height: 100vh;
+    flex: 1;
+    background-color:#005ca90f;
+    border-radius: 20px;
+}
+
+.index-dashboard{
+    margin:5px;
+    padding: 2rem;
+    min-height: 100vh;
+    flex: 10;
+    background-color:#005ca90f;
+    border-radius: 20px
+}
+
+.main-container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+/* buttons */
+
+.app-link{
+    text-decoration: none;
+    color: white;
+    background-color: #2d5da6;
+    padding:20px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    display: inline-block; 
+}
+
+.app-link:hover {
+    transform: scale(1.012); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #4a8edc;
+    transition: all 0.4s ease
+}
+
+.delete-button{
+    padding: 20px;
+    margin:20px; 
+    width: 150px;
+    border:none;
+    cursor: pointer;
+    border-radius:10px;
+    background-color:red;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    text-decoration:none;
+    transition: all 0.4s ease; 
+}
+
+.delete-button:hover{
+    transform: scale(1.012); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #4a8edc;
+}
+
+.edit-button{
+    padding: 20px;
+    margin:20px; 
+    width: 150px;
+    border:none;
+    cursor: pointer;
+    border-radius:10px;
+    background-color:purple;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    text-decoration:none;
+    transition: all 0.4s ease; 
+}
+
+.edit-button:hover{
+    transform: scale(1.012); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #4a8edc;
+}
+
+.skip-button{
+    background-color: purple;
+}
+
+.new-app-button{
+    display:flex;
+    flex-direction:row; 
+    align-items:center; 
+    padding:5px;
+    margin:20px; 
+    width: 150px;
+    border:none;
+    cursor: pointer;
+    border-radius:10px;
+    background-color:green;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    text-decoration:none;
+    transition: all 0.4s ease; 
+}
+
+.new-app-button:hover{
+    transform: scale(1.012); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #4a8edc;
+}
+
+/* form classes */
+
+.form-input{
+    padding:1rem;
+    margin:1rem;
+    border: 1px solid #005ca9;
+    border-radius: 10px;
+    color: #005ca9;
+    outline: none; 
+    font-size: large;
+}
+
+.form-input:focus{
+    border: 1px solid #005ca9; 
+}
+
+.form-label{
+    font-weight: bold;
+    font-size: large;
+    color: #444;
+}
+
+.login-dashboard{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.login-form{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.login-page-title{
+    padding:1rem;
+    margin:1rem;
+}
+
+.app-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding:1rem;
+}
+
+.app-form input, .app-form textarea {
+    margin-bottom: 10px;
+}
+
+.app-form button {
+    cursor: pointer;
+}
+
+/* cards */
+
+.app-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.4s ease; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    background-color: #2d5da6;
+    color: white;
+}
+
+.app-card:hover {
+    transform: scale(1.012); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #4a8edc; 
+}
+
+/* modal classes */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  #modal-buttons{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
+    padding:1rem;
+    margin:1rem;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
