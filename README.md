@@ -1,15 +1,18 @@
-# App Manager
+# Application Manager
 
 ## Description
-This is an application manager built with HTML, CSS, JavaScript, and PHP. It is designed to monitor apps and assign tasks.
+This is a simple application manager built with HTML, CSS, JavaScript, and PHP. It is designed to monitor apps and assign tasks.
 
 ## Features
 - **App Monitoring**: Keep track of all your applications in one place.
 - **Task Assignment**: Easily assign tasks to different applications.
 
 ## Usage
-Download XAMPP or any software to use php you like, activate apache and mysql, place the folder in htdocs, and navigate to the index route to start using the app, you will need to create a my sql db first, you can do this with the db file inside the folder
+1. Download and install a local server software like XAMPP or any other software that supports PHP.
+2. Activate the Apache and MySQL services through the control panel of your server software.
+3. Place the application folder in the 'htdocs' directory of your server software.
+4. Navigate to the index route (usually `http://localhost/your-folder-name`) in your web browser to start using the app.
+5. Before you start, you will need to create a MySQL database. This can be done using the 'db' file located inside the application folder. Import this file into your MySQL service (through phpMyAdmin or similar tool) to set up the required database.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
+Pull requests are welcome. 
